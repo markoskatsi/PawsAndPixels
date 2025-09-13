@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #526b05;
+    padding: 20px;
+}
+
+h1 {
+    color: #526b05;
+    font-size: 2.2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.empty {
+    text-align: center;
+    font-size: 1.1em;
+    color: #2a3114;
+    margin: 20px 0;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, 
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #2a3114;
+}
+
+table th {
+    background-color: #526b05;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: rgba(82, 107, 5, 0.1);
+}
+
+table tr:nth-child(even) {
+    background-color: #b3b3b3;
+}
+
+.remove {
+    color: #526b05;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.remove:hover {
+    text-decoration: underline;
+}
+
+form[method="get"] {
+    margin: 20px 0;
+    text-align: center;
+}
+
+form[method="get"] input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #526b05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form[method="get"] input[type="submit"]:hover {
+    background-color: #3a4d03;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #526b05;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back:hover {
+    background-color: #3a4d03;
+}
+
+

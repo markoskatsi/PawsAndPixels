@@ -1,0 +1,280 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #526b05;
+}
+
+h1 {
+    color: #526b05;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #526b05;
+    font-size: 1.8em;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+form {
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="search"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #526b05;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #b3b3b3;
+    color: #526b05;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #526b05;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3a4d03;
+}
+
+#autocomplete-results {
+    position: absolute;
+    top: 100%;
+    left: 34%;
+    width: 178px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #526b05;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.result-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #526b05;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:hover {
+    background-color: rgba(82, 107, 5, 0.1);
+}
+
+#logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#logout button {
+    padding: 10px 20px;
+    background-color: #526b05;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#logout button:hover {
+    background-color: #3a4d03;
+}
+
+.navbtns {
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.navbtn, #update {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #526b05;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.navbtn:hover, #update:hover {
+    background-color: #3a4d03;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 15px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #2a3114;
+}
+
+table th {
+    background-color: #526b05;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: rgba(82, 107, 5, 0.1);
+}
+
+table tr:nth-child(even) {
+    background-color: #b3b3b3;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.bookingForm label {
+    color: #2a3114;
+    font-weight: bold;
+}
+
+.bookingForm input[type="date"] {
+    padding: 8px;
+    background-color: #b3b3b3;
+    border: 1px solid #526b05;
+    color: #2a3114;
+    border-radius: 4px;
+}
+
+.timeSlots {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.timeSlotOptions {
+    display: flex;
+    gap: 5px;
+}
+
+.timeSlotOptions input[type="checkbox"] {
+    accent-color: #526b05;
+}
+
+.bookingForm input[type="submit"] {
+    padding: 10px;
+    background-color: #526b05;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.bookingForm input[type="submit"]:hover {
+    background-color: #3a4d03;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        position: static;
+        text-align: center;
+        margin: 15px 0;
+    }
+    
+    #logout {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .buttons {
+        width: 95%;
+    }
+    
+    table {
+        width: 95%;
+        font-size: 0.9em;
+    }
+    
+    table th,
+    table td {
+        padding: 10px;
+    }
+    
+    #autocomplete-results {
+        width: 150px;
+        left: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    form input[type="text"],
+    form input[type="search"] {
+        width: 200px;
+        font-size: 0.9em;
+    }
+    
+    form input[type="submit"] {
+        padding: 5px 8px;
+        font-size: 0.9em;
+    }
+    
+    #update, #book {
+        padding: 8px 15px;
+        margin: 5px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    #autocomplete-results {
+        width: 120px;
+        left: 15%;
+        font-size: 0.9em;
+    }
+}

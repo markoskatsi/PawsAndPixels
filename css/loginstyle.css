@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/catcafe.jpg');    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+
+form {
+    border: 2px solid #526b05;
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(13, 155, 13, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    color: #526b05;
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #b3b3b3;
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+form h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #526b05;
+    border-radius: 5px;
+    font-size: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b3b3b3;
+    color: #526b05;
+}
+
+label {
+    color: #526b05; 
+    text-align: left;
+}
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #526b05;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #3a4d03;
+    color: white;
+}
+
+.register-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #526b05;
+}
+
+.register-text {
+    color: #526b05;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #526b05;   
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.register-btn:hover {
+    background-color: #3a4d03;
+    color: white;
+}
+

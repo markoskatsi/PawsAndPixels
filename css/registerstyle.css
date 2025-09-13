@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/catcafe.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    border: 2px solid #526b05;
+    padding: 30px;
+    background-color: #303030;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #526b05;
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #b3b3b3;
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: #526b05;
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #526b05;
+    border-radius: 5px;
+    background-color: #b3b3b3;
+    color: #2a3114;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #526b05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3a4d03;
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(82, 107, 5, 0.2);
+    border: 1px solid #526b05;
+    border-radius: 5px;
+    color: #d1e7a3;
+    text-align: center;
+    line-height: 1.5;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-message .login {
+    display: block; 
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #d1e7a3;
+    border: 1px solid #d1e7a3;
+    border-radius: 5px;
+    font-size: 0.9em; 
+    cursor: pointer;
+}
+
+.success-message .login:hover {
+    background-color: rgba(209, 231, 163, 0.2); 
+}

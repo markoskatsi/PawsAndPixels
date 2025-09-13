@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #526b05;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1, h2, h3 {
+    color: #526b05;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 25px 0 15px 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin: 20px 0 10px 0;
+}
+
+form {
+    background-color: #d1d1d1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: auto;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    min-width: 150px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    border: 1px solid #526b05;
+    border-radius: 5px;
+    background-color: #b3b3b3;
+    color: #526b05;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"],
+button {
+    padding: 8px 15px;
+    background-color: #526b05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #3a4d03;
+}
+
+.btns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 468px) {
+    body {
+        padding: 20px;
+        position: static; 
+    }
+
+    h1 {
+        order: 0;
+        width: 100%;
+        margin-bottom: 60px; 
+        position: absolute;
+    }
+
+    .btns {
+        position: static; 
+        order: 1;
+        margin: 0 auto 20px auto; 
+        justify-content: center;
+        width: 100%;
+        top: auto;
+        right: auto;
+    }
+
+    form {
+        order: 2;
+        width: 90%;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    label {
+        display: block;
+        min-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+
+    input[type="submit"],
+    button {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
