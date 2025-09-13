@@ -4,9 +4,9 @@ require_once "../model/user.php";
 require_once "../model/machine.php";
 
 $pdo = new PDO(
-    "mysql:host=localhost;dbname=db_k2328632",
-    "k2328632",
-    "ewaejaez",
+    "mysql:host=localhost;dbname=paws",
+    "root",
+    "",
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 );
 
